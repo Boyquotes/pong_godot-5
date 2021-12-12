@@ -135,3 +135,4 @@ func checkCollisions() -> void:
 	
 	if Collisions.pointToRectangle(ball.getPosition(), aiPaddle.getRect()) and ball.isMovingRight():
 		aiPaddle.changeBallDirection(ball)
+		aiPaddle.changeChasePosition()
